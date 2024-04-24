@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Komputery</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="favicon.png">
+    <script src="main.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffcc00;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kontakt - Komputery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="contact-form">
+            <h2>Formularz Kontaktowy</h2>
+            <div class="form-group">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Nazwisko:</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="issue">Zgłoszenie:</label>
+                <select id="issue" name="issue" required>
+                    <option value="naprawa komputerów">Naprawa komputerów</option>
+                    <option value="odzyskiwanie danych">Odzyskiwanie danych</option>
+                    <option value="wirusy">Wirusy</option>
+                    <option value="konfiguracja LAN">Konfiguracja LAN</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="copy" name="copy" checked>
+                <label for="copy">Wyślij kopię wiadomości</label>
+            </div>
+            <div class="form-group">
+                <button type="reset">Wyczyść</button>
+                <button type="submit">Wyślij</button>
+            </div>
+        </form>
+        <div id="form-message"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Autor strony: <em>Toliczek</em></p>
+    </footer>
+</body>
+</html>

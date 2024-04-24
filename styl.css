@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background: #E0F7FA;
+    font-family: Arial;
+    text-align: center;
+}
+
+#kontener {
+    width: 95%;
+    margin: auto;
+}
+
+#baner {
+    background: #00ACC1; 
+    height: 200px;
+}
+
+#menu {
+    background: #00838F;
+    padding: 15px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+#glowny1,
+#glowny2,
+#glowny3 {
+    height: 350px;
+    width: 33%;
+    float: left;
+    background: #B2EBF2;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#stopka {
+    background: #00838F;
+    text-align: right;
+    padding: 10px;
+    clear: both;
+}
+
+ul {
+    text-align: left;
+}
+
+button {
+    background: #00ACC1; 
+    color: white;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; /
+}
+
+button:hover {
+    background-color: #80DEEA; 
+}
